@@ -1,0 +1,26 @@
+body {
+    font-family: Helvetica, sans-serif;
+    background-color: antiquewhite;
+}
+
+h1, ul {
+    text-align: center;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+a:link {
+    color: blue;
+    text-decoration: none;
+}
+
+a:visited {
+    color: blue;
+}
+
+a:hover {
+    text-decoration: underline;
+}

@@ -1,24 +1,28 @@
-body {
-    font-family: Helvetica, sans-serif;
-    background-color: antiquewhite;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    /* Global color variables */
+    --primary-color: #F8F7F3;
 }
 
-h1, ul {
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--primary-color);
+}
+
+h1 {
     text-align: center;
 }
 
-ul {
+.recipes {
+    text-align: center;
     list-style: none;
     padding: 0;
 }
 
-a:link {
-    color: blue;
+a:link, a:visited {
+    color: black;
     text-decoration: none;
-}
-
-a:visited {
-    color: blue;
 }
 
 a:hover {

@@ -1,4 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
 
 :root {
     /* Global color variables */
@@ -6,18 +12,74 @@
 }
 
 body {
-    font-family: 'Nunito', sans-serif;
+    /* font-family: 'Nunito', sans-serif; */
+    font-family: 'Lora', sans-serif;
     background-color: var(--primary-color);
-}
-
-h1 {
     text-align: center;
 }
 
-.recipes {
-    text-align: center;
-    list-style: none;
-    padding: 0;
+div.card {
+    /* border: solid 2px green; */
+    display: inline-block;
+    margin-right: 25px;
+    margin-top: 50px;
+    background-color: white;
+    width: 300px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 32px;
+    text-align: left;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+div.image-container {
+    /* border: solid 2px blue; */
+    width: 100%;
+    height: 50%; /* Image takes up half of container's height */
+}
+
+div.content-container {
+    padding: 32px 32px 10px 32px; /* top | right | bottom | left */
+    /* border: solid 2px red; */
+}
+
+img.food {
+    /* display: block; */
+    width: 100%;
+    height: 100%; /* Image takes up full height of image container */
+    object-fit: cover; /* Ensure image covers the container */
+}
+
+h3.card-label {
+    margin: 0;
+    font-weight: 600;
+    margin-bottom: 70px;
+}
+
+button {
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 12px;
+    font-family: 'Inter', sans-serif;
+    color: #59871f;
+    background-color: #f0f5c4;
+    letter-spacing: 2px;
+}
+
+img.time-icon {
+    width: 15px;
+    height: 15px;
+}
+
+p.cook-time-label {
+    margin: 0;
+    font-size: 11px;
+    font-family: 'Inter', sans-serif;
+    color: #1b2629;
+    line-height: 1.2;
+    float: right;
+    padding: 10px 0px 10px 10px;
 }
 
 a:link, a:visited {
